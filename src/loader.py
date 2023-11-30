@@ -13,6 +13,7 @@ from time import sleep
 # Create wrapper classes for using slack_sdk in place of slacker
 class SlackDataLoader:
     '''
+    n=SlackDataLoader('Data/anonymized')
     Slack exported data IO class.
 
     When you open slack exported ZIP file, each channel or direct message 
@@ -34,7 +35,7 @@ class SlackDataLoader:
         '''
         self.path = path
         self.channels = self.get_channels()
-        self.users = self.get_ussers()
+        self.users = self.get_users()
     
 
     def get_users(self):
